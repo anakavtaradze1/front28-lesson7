@@ -33,3 +33,22 @@
     transform: rotate(360deg);
   }
 }
+@keyframes slide-in {
+  from {
+    translate: 100px 0;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+@keyframes shadow-dance {
+  0% {
+    text-shadow: 5px 5px 0 plum, 10px 10px 0 skyblue;
+  }
+  50% {
+    text-shadow: -5px -5px 0 skyblue, -10px -10px 0 plum;
+  }
+  100% {
+    text-shadow: 5px 5px 0 plum, 10px 10px 0 skyblue;
+  }
+}
