@@ -35,7 +35,7 @@
 }
 @keyframes slide-in {
   from {
-    translate: 100px 0;
+    translate: 50px 0;
   }
   to {
     translate: 0 0;
@@ -50,5 +50,15 @@
   }
   100% {
     text-shadow: 5px 5px 0 plum, 10px 10px 0 skyblue;
+  }
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px crimson, 0 0 10px crimson, 0 0 20px crimson,
+      0 0 40px crimson, 0 0 80px crimson;
+  }
+  100% {
+    text-shadow: 0 0 10px slateblue, 0 0 20px slateblue, 0 0 40px slateblue,
+      0 0 80px slateblue, 0 0 160px slateblue;
   }
 }

@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap");
-
-* {
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap") * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -116,7 +114,9 @@ li:nth-child(4):hover a {
   letter-spacing: 5px;
   color: darkred;
   text-decoration-line: underline;
-  text-shadow: 10px 10px 20px purple;
+  text-shadow: 0 0 5px crimson, 0 0 10px crimson, 0 0 20px crimson,
+    0 0 40px crimson, 0 0 80px crimson;
+  animation: glow 2s linear infinite alternate;
 }
 .about-article {
   margin-bottom: 110px;
@@ -137,7 +137,7 @@ li:nth-child(4):hover a {
   left: 50px;
   border: 2px dotted pink;
   box-shadow: -5px 5px 5px palevioletred;
-  animation: slide-in 10s ease-in;
+  animation: slide-in 5s ease-in 5 alternate;
   font-family: "Oleo Script", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -211,4 +211,43 @@ li:nth-child(4):hover a {
 }
 .barcelona-image:hover {
   transform: rotate(360deg) scale(1.2, 1.2);
+}
+
+.about-footer {
+  background-color: palevioletred;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+}
+.about-footer h2 {
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: darkred;
+  transition: color 1s ease-in;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.about-footer:hover h2 {
+  color: darkblue;
+}
+.about-footer a {
+  color: darkred;
+  font-size: 30px;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: color 1s ease-in;
+}
+.about-footer:hover a {
+  color: darkblue;
+}
+.about-footer ul {
+  list-style: disc;
+  color: darkred;
+  transition: color 1s ease-in;
+}
+.about-footer:hover ul {
+  color: darkblue;
 }
