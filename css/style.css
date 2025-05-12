@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,618&display=swap");
 
 * {
   padding: 0;
@@ -242,6 +243,49 @@ li:nth-child(4):hover a {
   border: 5px dotted crimson;
   color: purple;
   transform: skew(10deg);
+}
+
+.about-popular-cities {
+  display: flex;
+  justify-content: space-evenly;
+}
+.popular-cities p {
+  width: 400px;
+  padding: 10px;
+  font-size: 20px;
+  color: palevioletred;
+  font-family: "Playfair Display", serif;
+  transition: color ease-in-out;
+}
+.popular-cities p:active {
+  color: red;
+}
+.popular-cities h2 {
+  color: palevioletred;
+  padding: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  transition: color ease-in-out;
+}
+.popular-cities h2:active {
+  color: red;
+}
+.popular-cities img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.popular-cities {
+  border: 1px solid white;
+  box-shadow: 0 5px 10px purple;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  transition: all ease-in-out;
+}
+.popular-cities:active {
+  box-shadow: 0 5px 10px red;
+  transform: scale(1.2);
 }
 
 .about-footer {
